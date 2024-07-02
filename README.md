@@ -2,7 +2,7 @@
 
 ## Objectif du Projet
 
-Ce projet vise à prédire les occurrences d'incendies dans deux pays spécifiques, le Portugal et la Grèce, pour l'année 2023. En utilisant des données historiques d'incendies, des informations météorologiques et des données de végétation, nous développons des modèles de machine learning pour effectuer une tâche de classification binaire (fire/not fire).
+Ce projet vise à prédire les occurrences d'incendies dans deux pays spécifiques, le Portugal et la Grèce. En utilisant des données historiques d'incendies, des informations météorologiques et des données de végétation, nous développons des modèles de machine learning pour effectuer une tâche de classification binaire (fire/not fire).
 
 ## Sources de Données
 
@@ -10,7 +10,6 @@ Les données utilisées dans ce projet proviennent de plusieurs sources :
 
 - **Données MODIS** : Données historiques des incendies provenant de satellites, couvrant le Portugal et la Grèce pour l'année 2023.
 - **API Météorologique** : Caractéristiques météorologiques extraites avant les incendies pour améliorer les prédictions.
-- **Fichiers HDF** : Données de végétation collectées et manipulées via des fichiers HDF en utilisant des systèmes de coordonnées géographiques.
 
 ## Structure des Notebooks
 
@@ -40,6 +39,4 @@ Pour exécuter ce projet, commencez par le notebook `Fire_Data` pour la prépara
 
 Chaque notebook est auto-contenu et peut être exécuté dans un environnement Jupyter avec les bibliothèques Python nécessaires installées, notamment scikit-learn, TensorFlow/Keras, Pandas, NumPy, et Seaborn/Matplotlib pour la visualisation.
 
-## Licence
 
-Ce projet est disponible sous la licence XYZ. Pour plus de détails, voir le fichier LICENSE dans ce repository.
