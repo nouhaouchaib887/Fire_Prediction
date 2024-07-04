@@ -31,7 +31,7 @@ Le projet est organisé en quatre notebooks principaux, chacun gérant une étap
 
 ## Datasets
 
-Le projet utilise un total de huit datasets distincts, qui incluent des données d'incendie, météorologiques, et de végétation pour les deux pays étudiés. Ces datasets sont préparés et nettoyés dans les différents notebooks avant d'être utilisés pour la modélisation.
+Le dossier comprend huit datasets distincts, chacun généré à des étapes spécifiques du projet pour être utilisé dans les étapes suivantes.
 
 ## Comment Utiliser
 
