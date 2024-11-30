@@ -1,42 +1,54 @@
-# Projet de Prédiction des Incendies
+# Wildfire Prediction Project
 
-## Objectif du Projet
+## Project Objective
 
-Ce projet vise à prédire les occurrences d'incendies dans deux pays spécifiques, le Portugal et la Grèce. En utilisant des données historiques d'incendies, des informations météorologiques et des données de végétation, nous développons des modèles de machine learning pour effectuer une tâche de classification binaire (fire/not fire).
+This project aims to predict wildfire occurrences in two specific countries, Portugal and Greece. Using historical fire data, meteorological information, and vegetation data, we develop machine learning models to perform a binary classification task (fire/not fire).
 
-## Sources de Données
+---
 
-Les données utilisées dans ce projet proviennent de plusieurs sources :
+## Data Sources
 
-- **Données MODIS** : Données historiques des incendies provenant de satellites, couvrant le Portugal et la Grèce pour l'année 2023.
-- **API Météorologique** : Caractéristiques météorologiques extraites avant les incendies pour améliorer les prédictions.
+The data used in this project comes from multiple sources:
 
-## Structure des Notebooks
+- **MODIS Data**: Historical fire data from satellites, covering Portugal and Greece for the year 2023.
+- **Weather API**: Meteorological features extracted prior to fire events to enhance predictive accuracy.
 
-Le projet est organisé en quatre notebooks principaux, chacun gérant une étape spécifique du processus :
+---
 
-1. **Fire_Data** :
-   - Chargement et traitement des données MODIS pour le Portugal et la Grèce.
-   - Génération de données correspondantes à des événements 'not fire' pour introduire une tâche de classification binaire.
+## Notebook Structure
 
-2. **Weather_Data** :
-   - Extraction des caractéristiques météorologiques via une API, ciblant les conditions avant les incidents d'incendie pour enrichir le modèle de prédiction.
+The project is organized into four main notebooks, each handling a specific phase of the process:
 
-3. **Vegetation_Data** :
-   - Collection et manipulation des données de végétation à partir de fichiers HDF, utilisant des techniques de géolocalisation pour préciser les zones d'étude.
+1. **Fire_Data**:
+   - Loading and processing MODIS data for Portugal and Greece.
+   - Generating "not fire" event data to introduce a binary classification task.
 
-4. **Modelisation_Evaluation** :
-   - Fusion des données collectées, prétraitement, réduction de dimensionnalité, et construction de différents modèles de machine learning.
-   - Évaluation et comparaison des modèles en utilisant diverses métriques de performance.
+2. **Weather_Data**:
+   - Extracting meteorological features using an API, focusing on conditions preceding fire incidents to enrich the predictive model.
+
+3. **Vegetation_Data**:
+   - Collecting and processing vegetation data from HDF files, leveraging geolocation techniques to pinpoint study areas.
+
+4. **Modeling_Evaluation**:
+   - Merging collected data, preprocessing, dimensionality reduction, and building various machine learning models.
+   - Evaluating and comparing models using diverse performance metrics.
+
+---
 
 ## Datasets
 
-Le dossier comprend huit datasets distincts, chacun généré à des étapes spécifiques du projet pour être utilisé dans les étapes suivantes.
+The project directory includes eight distinct datasets, each generated at specific stages of the project to be used in subsequent phases.
 
-## Comment Utiliser
+---
 
-Pour exécuter ce projet, commencez par le notebook `Fire_Data` pour la préparation initiale des données, suivi de `Weather_Data` et `Vegetation_Data` pour la collecte supplémentaire de données. Enfin, utilisez le notebook `Modelisation_Evaluation` pour la construction et l'évaluation des modèles prédictifs.
+## How to Use
 
-Chaque notebook est auto-contenu et peut être exécuté dans un environnement Jupyter avec les bibliothèques Python nécessaires installées, notamment scikit-learn, TensorFlow/Keras, Pandas, NumPy, et Seaborn/Matplotlib pour la visualisation.
+To execute this project:
 
+1. Start with the `Fire_Data` notebook for initial data preparation.
+2. Proceed with `Weather_Data` and `Vegetation_Data` for additional data collection.
+3. Finally, use the `Modeling_Evaluation` notebook to build and evaluate predictive models.
 
+Each notebook is self-contained and can be executed in a Jupyter environment with the necessary Python libraries installed, including scikit-learn, TensorFlow/Keras, Pandas, NumPy, and Seaborn/Matplotlib for visualization.
+
+---
